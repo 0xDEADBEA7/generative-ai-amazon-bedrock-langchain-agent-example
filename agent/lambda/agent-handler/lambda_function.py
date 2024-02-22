@@ -721,7 +721,7 @@ def loan_application(intent_request):
         for field in fields:
             field_name = field.T if hasattr(field, 'T') else ''
             field_value = field.V if hasattr(field, 'V') else ''
-            print(f"Field Name: {field_name}, Field Value: {field_value}")
+            #print(f"Field Name: {field_name}, Field Value: {field_value}")
 
         print("acroform")
         if acroform is not None and '/Fields' in acroform:

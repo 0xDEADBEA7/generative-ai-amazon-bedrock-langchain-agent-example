@@ -14,4 +14,4 @@ aws cloudformation delete-stack --stack-name $STACK_NAME
 aws cloudformation wait stack-delete-complete --stack-name $STACK_NAME
 
 echo "Deleting Secrets Manager Secret: $GITHUB_TOKEN_SECRET_NAME"
-aws secretsmanager delete-secret --secret-id $GITHUB_TOKEN_SECRET_NAME
+aws secretsmanager delete-secret --secret-id $GITHUB_TOKEN_SECRET_NAME --force-delete-without-recovery
